@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: maroon;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+}
+.pg-content-wrapper{
+    width: 50%;
+    margin: 10% auto;
+    border: 2px solid #fff;
+}
+.pg-mainHeader{
+    padding: .7em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: goldenrod;
+}
+.button-area{
+    padding: 0;
+    margin-bottom: 2em;
+}
+.game-buttons{
+    display: inline-block;
+    width: 32.85%;
+    background: green;
+    opacity: .6;
+    padding: 2em;
+    border: none;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.game-buttons:hover{
+    opacity: 1;
+}
+#r{
+    background:
+}
+.playerStats{
+    padding: 0 20px;
+    position: relative;
+    margin: 0 0 20px;
+}
+h4{
+    color:#fff;
+}
+h4 #p1, h4 #computer{
+    margin-left: 10px;
+    color: green;
+}
+.reset-key{
+    float: right;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+.reset{
+    padding: 15px 2em;
+    font-weight: bold;
+    border:2px solid #990000;
+    background: #ff0000;
+    opacity: .7;
+}
+.reset:hover{
+    opacity: 1;
+}
+
+
+.p1wins{
+    color: green;
+    font-weight: bold;
+}
+.draw{
+    color: yellow;
+}

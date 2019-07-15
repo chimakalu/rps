@@ -3,26 +3,33 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>RPS - GAME</title>
-		<style>
-			#r,#p,#s{
-				display: inline-block;
-				padding: 2em 5em;
-			}
-		</style>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main>
-			<article>
-				<h3> Game of Rock, Paper and Scissors </h3>
-				<span id="r">Rock</span>
-				<span id="p">Paper</span>
-				<span id="s">Scissors</span>
+		<main class="pg-content-wrapper">
+			<header class="pg-mainHeader">
+				<h1 class="main-heading"> Game of Rock, Paper and Scissors </h1>
+			</header><hr/>
+			<article class="button-area">
+				<button type="button" class="game-buttons"  id="r">Rock</button>
+				<button type="button" class="game-buttons" id="p">Paper</button>
+				<button type="button" class="game-buttons" id="s">Scissors</button>
 			</article>
-			<div class="">
-				<div>player 1: <span id="p1"></span></div>
-				<div>computer: <span id="computer"></span></div><br/>
-				Result: <span id='winner'></span>
+			<div class="playerStats">
+				<h4>Player 1: <span id="p1"></span></h4>
+				<h4>Computer: <span id="computer"></span></h4><br/>
+				Result: <span id='winner'></span><br/>
+				<div id="score">Score=>
+					<span id="p1-score">0 </span> :
+					<span id="computer-score"> 0</span>
+				</div>
+				<div class="reset-key">
+					<button type="button" onclick="resetGame();" class="reset">Start Again</button>
+				</div>
 			</div>
+			<hr/>
+			<div class="logging activities">...</div>
 		</main>
 		<script src="gamer.js" type="text/javascript"></script>
 	</body>
